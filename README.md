@@ -1,1 +1,1 @@
-# palindrome-checker
+## Palindrome Checker Project FCC JavaScript Course
