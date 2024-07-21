@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #acdbe4;
+    background-image: linear-gradient(298deg, #acdbe4 0%, #c38ce4 50%, #b5e0c1 100%);
+    color: #000000;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 500px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0; 
+}
+
+input,
+button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px; 
+    border: 1px solid #dcdcdc;
+    margin: 10px;
+    max-width: 100%;
+    width: 100%; 
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+input {
+    background-color: #ffffff; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+button {
+    background-color: #ffffff; 
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #000000; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Media Queries */
+
+/* Mobile devices (portrait) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Stack navbar items vertically */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablets and small screens */
+@media (max-width: 900px) {
+    .container {
+        width: 95%; /* Slightly wider container on small screens */
+    }
+
+    .navbar li {
+        margin: 0 15px; /* Reduced margin for smaller screens */
+    }
+
+    input,
+    button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
